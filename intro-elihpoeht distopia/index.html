@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Text Opening Sequence with CSS Animations</title>
+		<meta name="description" content="Text Opening Sequence with CSS Animations" />
+		<meta name="keywords" content="text, opening sequence, opening credits, css animations, typography, lettering.js" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">	
+			<div class="os-phrases" id="os-phrases">
+				<h2>Bienvenue</h2>
+				<h2>sur une expérience </h2>
+				<h2>web inédite</h2>
+				<h2>Vous allez</h2>
+				<h2>Vivre une histoire</h2>
+				<h2>Et écouter une pièce</h2>
+				<h2>original enregistré par</h2>
+				<h2>Elihpoeht records</h2>
+				
+			</div>
+
+			
+
+			
+		</div><!-- /container -->
+		<div class="container center">
+			<a href="chapitre 1/index.html" class="waves-effect waves-light btn">Read the story</a>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquery.lettering.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#os-phrases > h2").lettering('words').children("span").lettering().children("span").lettering(); 
+			})
+		</script>
+	</body>
+</html>
