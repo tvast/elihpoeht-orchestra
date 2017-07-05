@@ -7,6 +7,8 @@
     <title>lettremiroir</title>
     <link rel="stylesheet" type="text/css" href="css/stylesWindow.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">
+
+
      
   </head>
   <body>
@@ -18,20 +20,20 @@
 <div class="container center">
             <a href="texttospeech/index.html" class="waves-effect waves-light btn">Suite</a>
         </div>
+ <audio>
 
-<audio autoplay="true">
   <source src="audio/opera for a cat.wav" type="audio/ogg">
-  Your browser does not support the audio tag.
+
 </audio>
 
  <div class="container center">
     <a onclick="hello()" class="waves-effect waves-light btn">Introduction musique</a>
   </div>
   <div class="container center">
-    <a onclick="document.getElementById("myplayer").play()" class="waves-effect waves-light btn">Play EP</a>
+    <a onclick="play()" class="waves-effect waves-light btn">Play EP</a>
   </div>
   <div class="container center">
-    <a onclick="document.getElementById("myplayer").pause()" class="waves-effect waves-light btn">Pause EP</a>
+    <a onclick="pause()" class="waves-effect waves-light btn">Pause EP</a>
   </div>
   <div class="container center">
     <a onclick="hello2()" class="waves-effect waves-light btn">Lire l'histoire</a>
@@ -136,6 +138,18 @@
     });
 </script>
 
+
+    <script type="text/javascript">
+        var vid = document.getElementById("myplayer"); 
+
+    function play() { 
+        vid.play(); 
+    } 
+
+    function pause() { 
+        vid.pause(); 
+    }
+</script>
 
 
 </script>
