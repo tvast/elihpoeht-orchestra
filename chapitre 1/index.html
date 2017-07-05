@@ -20,43 +20,17 @@
 <div class="container center">
             <a href="texttospeech/index.html" class="waves-effect waves-light btn">Suite</a>
         </div>
- <audio>
+ <audio autoplay="true">
 
   <source src="audio/opera for a cat.wav" type="audio/ogg">
 
 </audio>
 
- <div class="container center">
-    <a onclick="hello()" class="waves-effect waves-light btn">Introduction musique</a>
-  </div>
-  <div class="container center">
-    <a onclick="play()" class="waves-effect waves-light btn">Play EP</a>
-  </div>
-  <div class="container center">
-    <a onclick="pause()" class="waves-effect waves-light btn">Pause EP</a>
-  </div>
-  <div class="container center">
-    <a onclick="hello2()" class="waves-effect waves-light btn">Lire l'histoire</a>
-  </div>
 <audio id="myplayer">
     <source src="florilege-elihpoeht.mp3" type="audio/ogg">
       Your browser does not support the audio tag.
     </audio>
-    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
-    <script type="text/javascript">
-      var p = "salut c'est theophile pour un test de lecture en html javascript"
-      var x = "Dirdam project est un EP de musique électronique alliant la douceur de la house, l'energie de la bass musique et une pointe d'electro pour faire vivre une éxpérience musicale universel et éclectique. Cette page vous propose de vous plonger dans l'univers d'Elihpoeht records"
-      function hello () {
-        responsiveVoice.speak(x, "French Female", {pitch: 1});
 
-      }
-      var y ="mon coeur s'egare et vous crie entendez ma voie je vous prie elle hurle, elle parle de la vie Tendez cette oreille mon amie J'ai besoin de votre regarde ces braises gelée qui me guide dans le noir je vis à travers votre miroir/legereté je suis fou, fou, fou de vous fou fou fou mais debout perdue dans cet amour mon chemin pour toujours grace à vous, je suis nous mon corp s'\ efface et te prie de me perdre dans l'oublie De disparaitre pour te retrouver J'aime à nouveau te rencontrerQuel est cet opaque destin ? Que vous eclaircissez de votre main ? L'avenir est-il à nous ? Ou serais-je tout simplement fou ? je suis fou, fou, fou de vous fou fou fou mais debout perdue dans cet amour mon chemin pour toujours grace à vous, je suis nous Je me souviens, vous dormiez Et ma lanterne était alors allumé Elle dessinait des formes sur votre visage Du livre de l'amour nous tournions les pagesJamais l \ 'obscurité ne vous a caché Mon âme flirt avec la raison Et c'est l'amour qui est sans pardonIl me perd car je dois eternelement vous retrouver" 
-      function hello2 () {
-        responsiveVoice.speak(y, "French Female", {pitch: 1});
-
-      }
-      
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 
@@ -105,7 +79,7 @@
             // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
             stringsElement: null,
             // typing speed
-            typeSpeed: 0,
+            typeSpeed: 10,
             // time before typing starts
             startDelay: 0,
             // backspacing speed
